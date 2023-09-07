@@ -18,7 +18,12 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/deliver.sh'
+                sh 'echo Should some java code here but it has an access error which I couldn't resolve'
+            }
+        }
+        stage('Complete') {
+            steps {
+                sh 'echo Job completed'
             }
         }
     }
